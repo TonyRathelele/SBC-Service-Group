@@ -340,21 +340,36 @@ a:focus {
     border-color: #33a2fd;
 }
 
+
+
 @media (max-width: 767.98px) {
-    .carousel .carousel-caption h1 {
-        font-size: 40px;
-        font-weight: 700;
+    .carousel {
+        height: 150vh; /* 50% of the viewport height */
+        min-height: auto;
     }
-    
+
+    .carousel .carousel-caption {
+        height: 100vh;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centers content vertically */
+        align-items: center; /* Centers content horizontally */
+        text-align: center;
+        padding: 10px; /* Add some spacing */
+    }
+
     .carousel .carousel-caption p {
-        font-size: 20px;
+        font-size: 18px;
+        margin-bottom: 10px; /* Space between text and button */
     }
-    
+
     .carousel .carousel-caption .btn {
         padding: 12px 30px;
         font-size: 18px;
         font-weight: 500;
         letter-spacing: 0;
+        margin-top: 10px; /* Space above button */
     }
 }
 
@@ -366,6 +381,7 @@ a:focus {
     
     .carousel .carousel-caption p {
         font-size: 16px;
+        margin-bottom: 8px; /* Adjust spacing for smaller screens */
     }
     
     .carousel .carousel-caption .btn {
@@ -373,8 +389,11 @@ a:focus {
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 0;
+        margin-top: 8px; /* Adjust spacing for smaller screens */
     }
 }
+
+
 
 .carousel .animated {
     -webkit-animation-duration: 1.5s;
